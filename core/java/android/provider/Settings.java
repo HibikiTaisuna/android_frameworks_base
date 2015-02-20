@@ -3645,7 +3645,17 @@ public final class Settings {
          * Toast Animations
          * @hide
          */
+<<<<<<< HEAD
         public static final String TOAST_ANIMATION = "toast_animation";
+=======
+        public static final String VOICE_LAUNCH_INTENT = "voice_launch_intent";
+
+        /**		
+         *  Enable navigation bar double tap gesture on to put device to sleep
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_NAVBAR = "double_tap_sleep_navbar";		
+>>>>>>> 841f356... Double tap to sleep on navigation bar [1/2]
         
         /**
          * ListView Animations
@@ -3873,7 +3883,17 @@ public final class Settings {
          *
          * @hide
          */
+<<<<<<< HEAD
         public static final String APP_CIRCLE_BAR_SHOW_TRIGGER = "app_circle_bar_show_trigger";
+=======
+        public static final String NAVIGATION_BAR_SHOW = "navigation_bar_show";
+        
+        /**
+         * Navigation bar button color
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";        
+>>>>>>> 841f356... Double tap to sleep on navigation bar [1/2]
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
