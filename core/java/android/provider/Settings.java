@@ -2189,41 +2189,65 @@ public final class Settings {
         /**
          * The keyboard brightness to be used while the screen is on.
          * Valid value range is between 0 and {@link PowerManager#getMaximumKeyboardBrightness()}
-         * @deprecated
+         * @deprecated Use {@link android.provider.Settings.Secure#KEYBOARD_BRIGHTNESS} instead
          * @hide
          */
+        @Deprecated
         public static final String KEYBOARD_BRIGHTNESS = Secure.KEYBOARD_BRIGHTNESS;
 
         /**
          * The button brightness to be used while the screen is on or after a button press,
          * depending on the value of {@link BUTTON_BACKLIGHT_TIMEOUT}.
          * Valid value range is between 0 and {@link PowerManager#getMaximumButtonBrightness()}
-         * @deprecated
+         * @deprecated Use {@link android.provider.Settings.Secure#BUTTON_BRIGHTNESS} instead
          * @hide
          */
+        @Deprecated
         public static final String BUTTON_BRIGHTNESS = Secure.BUTTON_BRIGHTNESS;
 
         /**
          * The time in ms to keep the button backlight on after pressing a button.
          * A value of 0 will keep the buttons on for as long as the screen is on.
-         * @deprecated
+         * @deprecated Use {@link android.provider.Settings.Secure#BUTTON_BACKLIGHT_TIMEOUT} instead
          * @hide
          */
+        @Deprecated
         public static final String BUTTON_BACKLIGHT_TIMEOUT = Secure.BUTTON_BACKLIGHT_TIMEOUT;
 
+<<<<<<< HEAD
+=======
         /**
-         * Deprecated Use {@link android.provider.Settings.Secure.QS_TILES}
+         * Whether to allow one finger quick settings expansion on the right side of the statusbar.
          * @hide
          */
-        @Deprecated
-        public static final String QS_TILES = "sysui_qs_tiles";
+        public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "status_bar_quick_qs_pulldown";
 
         /**
-         * Deprecated Use {@link android.provider.Settings.Secure.QS_USE_MAIN_TILES}
+         * Whether to show the brightness slider in quick settings panel.
+         * @deprecated Use {@link android.provider.Settings.Secure#QS_SHOW_BRIGHTNESS_SLIDER}
+         * instead
          * @hide
          */
         @Deprecated
-        public static final String QS_USE_MAIN_TILES = "sysui_qs_main_tiles";
+        public static final String QS_SHOW_BRIGHTNESS_SLIDER = Secure.QS_SHOW_BRIGHTNESS_SLIDER;
+
+>>>>>>> 29f04d6... Cleanup deprecated settings
+        /**
+         * List of QS tile names
+         * @deprecated Use {@link android.provider.Settings.Secure#QS_TILES} instead
+         * @hide
+         */
+        @Deprecated
+        public static final String QS_TILES = Secure.QS_TILES;
+
+        /**
+         * Use "main" tiles on the first row of the quick settings panel
+         * 0 = no, 1 = yes
+         * @deprecated Use {@link android.provider.Settings.Secure#QS_USE_MAIN_TILES} instead
+         * @hide
+         */
+        @Deprecated
+        public static final String QS_USE_MAIN_TILES = Secure.QS_USE_MAIN_TILES;
 
         /**
          * Control whether the process CPU usage meter should be shown.
@@ -2649,10 +2673,11 @@ public final class Settings {
         public static final String TIME_12_24 = "time_12_24";
 
         /**
-        * Developer options - Navigation Bar show switch
-        * @deprecated
-        * @hide
-        */
+         * Developer options - Navigation Bar show switch
+         * @deprecated Use {@link android.provider.Settings.Secure#DEV_FORCE_SHOW_NAVBAR} instead
+         * @hide
+         */
+        @Deprecated
         public static final String DEV_FORCE_SHOW_NAVBAR = Secure.DEV_FORCE_SHOW_NAVBAR;
         
         /**
@@ -2661,6 +2686,7 @@ public final class Settings {
          */
         public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
+<<<<<<< HEAD
         /**
          * Navigation bar height when it is on landscape
          * @hide
@@ -2699,6 +2725,8 @@ public final class Settings {
          */
         public static final String QS_SMART_PULLDOWN = "qs_smart_pulldown";
         
+=======
+>>>>>>> 29f04d6... Cleanup deprecated settings
         /**
          * Date format string
          *   mm/dd/yyyy
@@ -6310,9 +6338,15 @@ public final class Settings {
          * @hide
          */
         public static final String APP_PERFORMANCE_PROFILES_ENABLED = "app_perf_profiles_enabled";
+<<<<<<< HEAD
         
         /** Whether to show the brightness slider in quick settings panel.
          *
+=======
+
+        /**
+         * Whether to show the brightness slider in quick settings panel.
+>>>>>>> 29f04d6... Cleanup deprecated settings
          * @hide
          */
         
